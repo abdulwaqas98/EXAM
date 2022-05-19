@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event organizer website</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylsheet" href="style.css">
+<style>
+    *{
+    margin:0;
+    padding: 0;
+    outline: none;
+    /* border: none;
+    background-color: red; */
+}
+.maincon{
+    display:inline;
+}
+.navbar{
+    color: red;
+}
+
+    nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #aaa5a5;
+  align-items: center;
+  font-size: 1em;
+  /* padding: 0 50px 0 100px; */
+  flex-wrap: wrap;
+
+}
+section#courses{
+    background-color:white !important;
+}
+.main-container{
+    height:100% !important;
+    width:100% !important;
+    margin:0px 0px 10px 0px !important;
+    padding: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    grid-gap:35px !important;
+    flex-wrap: wrap !important;
+}
+.card{
+    margin:25px 0px !important;
+    height:343px !important;
+    width:190px !important;
+    transform-style: preserve-3d !important;
+    border-radius: 10px !important;
+    transition: all 500ms ease-in-out !important;
+    position: relative !important;
+    box-shadow: 0px 0px 7px rgb(144, 42, 240) !important; 
+
+}
+
+.card:hover {
+    transform: rotateY(180deg) !important;
+}
+.front {
+    position:absolute !important;
+    backface-visibility: hidden !important;
+    border-radius: 10px !important;
+}
+.front img{
+    border-radius: 10px !important;
+    height:200px !important;
+    width:190px !important;
+}
+.front .content
+{
+    height:143px !important;
+    width:190px !important; 
+    padding:25px !important;
+    text-align: center !important;
+    color:rgb(144, 42, 240) !important;
+    font-weight: bold !important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif' !important;
+}
+.back {
+    height:100% !important;
+    width:100% !important;
+    position:absolute !important;
+    background-color: rgb(255, 155, 125) !important;
+    transform: rotateY(180deg) !important;
+    backface-visibility: hidden !important;
+    border-radius: 10px !important;
+    display:flex !important;
+    justify-content: center !important;
+    align-items:center !important;
+    flex-direction:column !important;
+    text-align:center !important;
+    color:white !important;
+    background-color:rgb(16, 29, 218) !important;
+}
+footer{
+    
+  background: #aaa5a5;
+}
+
+
+</style>   
+</head>
+<body>
+    <div class="maincon">
+    <header class="header">
+     <!-- <div class="main"><img src="images/loog.jpg"></div> -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        
+
+<section id="courses">
+    <h1>Events</h1>
+    <div class="main-container">
+        <div class="card">
+            <div class="front">
+                <img src="images/1.jfif" alt="">
+                <div class="content">
+                    <h5>Event 1</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description: <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                    .</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front">
+                <img src="images/1.jfif" alt="">
+                <div class="content">
+                    <h5>Event 1</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description: <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                    .</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front">
+                <img src="images/1.jfif" alt="">
+                <div class="content">
+                    <h5>Event 1</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description: <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                    .</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front">
+                <img src="images/1.jfif" alt="">
+                <div class="content">
+                    <h5>Event 1</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description: <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                    .</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front">
+                <img src="images/1.jfif" alt="">
+                <div class="content">
+                    <h5>Event 1</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description: <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                    .</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front">
+                <img src="images/1.jfif" alt="">
+                <div class="content">
+                    <h5>Event 1</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description: <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                    .</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front">
+                <img src="images/2.jfif" alt="">
+                <div class="content">
+                    <h5>Event 2</h5> <br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description: <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                    .</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/3.jfif" alt="">
+                <div class="content">
+                    <h5>Event 3</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author: Steve McConnell</h5><br>
+                <p> Description:<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/4.jfif" alt="">
+                <div class="content">
+                    <h5>Event 4</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author:Steve McConnell </h5><br>
+                <p> Description:<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/5.jfif" alt="">
+                <div class="content">
+                    <h5>Event 5</h5><br>
+                    <p>Mouse hover for details.</p>
+                </div>
+            </div>
+            <div class="back">
+                <h5> Author:Steve McConnell</h5><br>
+                <p> Description:<br>
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius minus ullam assumenda reprehenderit consequuntur consequatur porro molestiae distinctio. Ipsam molestiae mollitia delectus?
+                </p>
+            </div>
+        </div>
+        <!-- <button id="directtoform" onclick="changetheme()">change Theme</button> -->
+    </div>
+</section>
+<button>Change color</button>
+
+    </header>
+
+
+    <div class="con">
+        <div class="form-container">
+            <form class="form">
+                <input id="search" type="text" class="input" placeholder="search..."/>
+                <button id="clear" class="clear-results">clear</button>
+            </form>
+
+  </div>
+  <div class="results-container>
+     <ul class="results-list" id="list">
+
+     </ul>
+  </div>
+    </div>
+
+    <footer id="dk-footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <a href="index.html" class="footer-logo">
+                            <img src="images/footer_logo.png" alt="footer_logo" class="img-fluid">
+                        </a>
+                        <p class="footer-info-text">
+                           Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+                        </p>
+                        <div class="footer-social-link">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social link -->
+                    </div>
+                    <!-- End Footer info -->
+                    <div class="footer-awarad">
+                        <img src="images/icon/best.png" alt="">
+                        <p>Best Design Company 2019</p>
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Jaipur India</h3>
+                                    <p>5353 Road Avenue</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>95 711 9 5353</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h3>Useful Links</h3>
+                                    <span class="animate-border border-black"></span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                              
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
+                        
+                        <!-- End Col -->
+                    </div>
+                    <!-- End Row -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Widget Row -->
+        </div>
+</footer>
+
+    <script>
+        const btn = document.querySelector('body');
+
+function random(number) {
+  return Math.floor(Math.random() * (number+1));
+}
+
+btn.addEventListener('click', () => {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
+    </script>
+</body>
+</html>
